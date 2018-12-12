@@ -1,0 +1,41 @@
+*{margin: 0;padding: 0;}
+#demo{
+    display: block;
+    width: 450px;
+    height: 450px;
+    margin: 50px;
+    position: relative;
+    border: 1px solid #ccc;
+}
+#small-box{
+    position: relative;
+    z-index: 1;
+}
+/* 放大镜div */
+#float-box{
+    display: none;
+    width: 200px;
+    height: 180px;
+    position: absolute;
+    background: #ffffcc;
+    border: 1px solid #ccc;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    cursor: move;
+}
+/* 放大图片的div */
+#big-box{
+    display: none;
+    position: relative;
+    top: -440px;
+    left: 460px;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    z-index: 1;
+}
+#big-box img{
+    position: absolute;
+    z-index: 5;
+}
